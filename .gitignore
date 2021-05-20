@@ -1,0 +1,4 @@
+.vscode/
+old_results
+*.tar
+*/.ipynb_checkpoints/
