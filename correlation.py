@@ -122,8 +122,6 @@ def plot_matrices(seed, dataset, depth, cor, epoch, data, stride=1):
         diffs.append((diff, seed, dataset, depth, cor, epoch, data, stride, layer_str,
                       f'{layer_str} Difference (Epoch {epoch + stride} - {epoch})'))
 
-log_file = open('logs.txt', 'w')
-
 for SEED, dataset in [(123, 'mnist'), (123, 'cifar10')]:
     for d in [1, 3]:
         for cor in [25, 50, 75]:
