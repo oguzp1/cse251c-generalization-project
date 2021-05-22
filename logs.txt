@@ -1,0 +1,96 @@
+MNIST   MLP 1x512 (50% Corruption) | Input Layer Weights       | # Pristine Correlated:    8 (Fraction: 0.000020) | # Corrupt Correlated: 1598 (Fraction: 0.003981) | Overlap:   1 | Corrupt   
+MNIST   MLP 1x512 (75% Corruption) | Input Layer Weights       | # Pristine Correlated:    6 (Fraction: 0.000015) | # Corrupt Correlated: 1207 (Fraction: 0.003007) | Overlap:   0 | Corrupt   
+MNIST   MLP 1x512 (25% Corruption) | Hidden Layer 1 Weights    | # Pristine Correlated:    8 (Fraction: 0.000031) | # Corrupt Correlated: 1131 (Fraction: 0.004314) | Overlap:   0 | Corrupt   
+MNIST   MLP 1x512 (25% Corruption) | Input Layer Weights       | # Pristine Correlated:   28 (Fraction: 0.000070) | # Corrupt Correlated: 1045 (Fraction: 0.002603) | Overlap:   0 | Corrupt   
+MNIST   MLP 1x512 (50% Corruption) | Hidden Layer 1 Weights    | # Pristine Correlated:   13 (Fraction: 0.000050) | # Corrupt Correlated:  838 (Fraction: 0.003197) | Overlap:   0 | Corrupt   
+MNIST   MLP 1x512 (50% Corruption) | Output Layer Weights      | # Pristine Correlated:    0 (Fraction: 0.000000) | # Corrupt Correlated:  382 (Fraction: 0.074609) | Overlap:   0 | Corrupt   
+MNIST   MLP 1x512 (25% Corruption) | Output Layer Weights      | # Pristine Correlated:    4 (Fraction: 0.000781) | # Corrupt Correlated:  326 (Fraction: 0.063672) | Overlap:   0 | Corrupt   
+MNIST   MLP 1x512 (75% Corruption) | Output Layer Weights      | # Pristine Correlated:    0 (Fraction: 0.000000) | # Corrupt Correlated:  300 (Fraction: 0.058594) | Overlap:   0 | Corrupt   
+MNIST   MLP 1x512 (75% Corruption) | Hidden Layer 1 Weights    | # Pristine Correlated:    6 (Fraction: 0.000023) | # Corrupt Correlated:  193 (Fraction: 0.000736) | Overlap:   0 | Corrupt   
+CIFAR10 MLP 1x512 (25% Corruption) | Input Layer Weights       | # Pristine Correlated:   78 (Fraction: 0.000050) | # Corrupt Correlated:  123 (Fraction: 0.000078) | Overlap:   2 | Corrupt?  
+CIFAR10 MLP 3x512 (25% Corruption) | Input Layer Bias          | # Pristine Correlated:    2 (Fraction: 0.003906) | # Corrupt Correlated:   47 (Fraction: 0.091797) | Overlap:   1 | Corrupt   
+CIFAR10 MLP 3x512 (75% Corruption) | Input Layer Bias          | # Pristine Correlated:    0 (Fraction: 0.000000) | # Corrupt Correlated:   35 (Fraction: 0.068359) | Overlap:   0 | Corrupt   
+CIFAR10 MLP 3x512 (50% Corruption) | Input Layer Bias          | # Pristine Correlated:    0 (Fraction: 0.000000) | # Corrupt Correlated:   24 (Fraction: 0.046875) | Overlap:   0 | Corrupt   
+CIFAR10 MLP 1x512 (25% Corruption) | Hidden Layer 1 Weights    | # Pristine Correlated:    0 (Fraction: 0.000000) | # Corrupt Correlated:   17 (Fraction: 0.000065) | Overlap:   0 | Corrupt   
+CIFAR10 MLP 3x512 (75% Corruption) | Hidden Layer 2 Bias       | # Pristine Correlated:    0 (Fraction: 0.000000) | # Corrupt Correlated:    9 (Fraction: 0.017578) | Overlap:   0 | Corrupt   
+CIFAR10 MLP 1x512 (25% Corruption) | Input Layer Bias          | # Pristine Correlated:    2 (Fraction: 0.003906) | # Corrupt Correlated:    7 (Fraction: 0.013672) | Overlap:   0 | Corrupt   
+CIFAR10 MLP 3x512 (50% Corruption) | Hidden Layer 2 Bias       | # Pristine Correlated:    1 (Fraction: 0.001953) | # Corrupt Correlated:    7 (Fraction: 0.013672) | Overlap:   0 | Corrupt   
+CIFAR10 MLP 3x512 (50% Corruption) | Hidden Layer 1 Bias       | # Pristine Correlated:    3 (Fraction: 0.005859) | # Corrupt Correlated:    6 (Fraction: 0.011719) | Overlap:   0 | Corrupt   
+MNIST   MLP 3x512 (75% Corruption) | Output Layer Weights      | # Pristine Correlated:    0 (Fraction: 0.000000) | # Corrupt Correlated:    6 (Fraction: 0.001172) | Overlap:   0 | Corrupt   
+CIFAR10 MLP 1x512 (25% Corruption) | Output Layer Weights      | # Pristine Correlated:    0 (Fraction: 0.000000) | # Corrupt Correlated:    5 (Fraction: 0.000977) | Overlap:   0 | Corrupt   
+CIFAR10 MLP 3x512 (25% Corruption) | Output Layer Weights      | # Pristine Correlated:  123 (Fraction: 0.024023) | # Corrupt Correlated:    4 (Fraction: 0.000781) | Overlap:   2 | Pristine  
+CIFAR10 MLP 3x512 (25% Corruption) | Hidden Layer 1 Bias       | # Pristine Correlated:   46 (Fraction: 0.089844) | # Corrupt Correlated:    4 (Fraction: 0.007812) | Overlap:   0 | Pristine  
+CIFAR10 MLP 3x512 (25% Corruption) | Input Layer Weights       | # Pristine Correlated:    1 (Fraction: 0.000001) | # Corrupt Correlated:    4 (Fraction: 0.000003) | Overlap:   0 | Corrupt   
+CIFAR10 MLP 1x512 (50% Corruption) | Hidden Layer 1 Bias       | # Pristine Correlated:    3 (Fraction: 0.005859) | # Corrupt Correlated:    3 (Fraction: 0.005859) | Overlap:   0 | Mixed     
+CIFAR10 MLP 1x512 (75% Corruption) | Hidden Layer 1 Bias       | # Pristine Correlated:    0 (Fraction: 0.000000) | # Corrupt Correlated:    3 (Fraction: 0.005859) | Overlap:   0 | Corrupt   
+CIFAR10 MLP 3x512 (50% Corruption) | Input Layer Weights       | # Pristine Correlated:    0 (Fraction: 0.000000) | # Corrupt Correlated:    3 (Fraction: 0.000002) | Overlap:   0 | Corrupt   
+CIFAR10 MLP 1x512 (50% Corruption) | Input Layer Bias          | # Pristine Correlated:    0 (Fraction: 0.000000) | # Corrupt Correlated:    2 (Fraction: 0.003906) | Overlap:   0 | Corrupt   
+CIFAR10 MLP 1x512 (75% Corruption) | Input Layer Weights       | # Pristine Correlated:    0 (Fraction: 0.000000) | # Corrupt Correlated:    2 (Fraction: 0.000001) | Overlap:   0 | Corrupt   
+CIFAR10 MLP 3x512 (75% Corruption) | Hidden Layer 1 Bias       | # Pristine Correlated:    0 (Fraction: 0.000000) | # Corrupt Correlated:    2 (Fraction: 0.003906) | Overlap:   0 | Corrupt   
+CIFAR10 MLP 3x512 (25% Corruption) | Hidden Layer 2 Bias       | # Pristine Correlated:   83 (Fraction: 0.162109) | # Corrupt Correlated:    1 (Fraction: 0.001953) | Overlap:   0 | Pristine  
+CIFAR10 MLP 3x512 (50% Corruption) | Output Layer Weights      | # Pristine Correlated:    6 (Fraction: 0.001172) | # Corrupt Correlated:    1 (Fraction: 0.000195) | Overlap:   0 | Pristine  
+MNIST   MLP 3x512 (25% Corruption) | Output Layer Weights      | # Pristine Correlated:    0 (Fraction: 0.000000) | # Corrupt Correlated:    1 (Fraction: 0.000195) | Overlap:   0 | Corrupt   
+MNIST   MLP 3x512 (50% Corruption) | Output Layer Weights      | # Pristine Correlated:    0 (Fraction: 0.000000) | # Corrupt Correlated:    1 (Fraction: 0.000195) | Overlap:   0 | Corrupt   
+MNIST   MLP 3x512 (75% Corruption) | Input Layer Weights       | # Pristine Correlated:    0 (Fraction: 0.000000) | # Corrupt Correlated:    1 (Fraction: 0.000002) | Overlap:   0 | Corrupt   
+CIFAR10 MLP 1x512 (50% Corruption) | Input Layer Weights       | # Pristine Correlated:    0 (Fraction: 0.000000) | # Corrupt Correlated:    1 (Fraction: 0.000001) | Overlap:   0 | Corrupt   
+CIFAR10 MLP 3x512 (75% Corruption) | Output Layer Weights      | # Pristine Correlated:    0 (Fraction: 0.000000) | # Corrupt Correlated:    1 (Fraction: 0.000195) | Overlap:   0 | Corrupt   
+CIFAR10 MLP 3x512 (25% Corruption) | Hidden Layer 3 Bias       | # Pristine Correlated:   98 (Fraction: 0.191406) | # Corrupt Correlated:    0 (Fraction: 0.000000) | Overlap:   0 | Pristine  
+CIFAR10 MLP 1x512 (25% Corruption) | Hidden Layer 1 Bias       | # Pristine Correlated:   73 (Fraction: 0.142578) | # Corrupt Correlated:    0 (Fraction: 0.000000) | Overlap:   0 | Pristine  
+CIFAR10 MLP 1x512 (25% Corruption) | Output Layer Bias         | # Pristine Correlated:    8 (Fraction: 0.800000) | # Corrupt Correlated:    0 (Fraction: 0.000000) | Overlap:   0 | Pristine  
+CIFAR10 MLP 3x512 (50% Corruption) | Hidden Layer 3 Bias       | # Pristine Correlated:    7 (Fraction: 0.013672) | # Corrupt Correlated:    0 (Fraction: 0.000000) | Overlap:   0 | Pristine  
+CIFAR10 MLP 3x512 (25% Corruption) | Output Layer Bias         | # Pristine Correlated:    3 (Fraction: 0.300000) | # Corrupt Correlated:    0 (Fraction: 0.000000) | Overlap:   0 | Pristine  
+MNIST   MLP 1x512 (25% Corruption) | Hidden Layer 1 Bias       | # Pristine Correlated:    1 (Fraction: 0.001953) | # Corrupt Correlated:    0 (Fraction: 0.000000) | Overlap:   0 | Pristine  
+MNIST   MLP 1x512 (25% Corruption) | Output Layer Bias         | # Pristine Correlated:    1 (Fraction: 0.100000) | # Corrupt Correlated:    0 (Fraction: 0.000000) | Overlap:   0 | Pristine  
+MNIST   MLP 1x512 (25% Corruption) | Input Layer Bias          | # Pristine Correlated:    0 (Fraction: 0.000000) | # Corrupt Correlated:    0 (Fraction: 0.000000) | Overlap:   0 | Mixed     
+MNIST   MLP 1x512 (50% Corruption) | Hidden Layer 1 Bias       | # Pristine Correlated:    0 (Fraction: 0.000000) | # Corrupt Correlated:    0 (Fraction: 0.000000) | Overlap:   0 | Mixed     
+MNIST   MLP 1x512 (50% Corruption) | Input Layer Bias          | # Pristine Correlated:    0 (Fraction: 0.000000) | # Corrupt Correlated:    0 (Fraction: 0.000000) | Overlap:   0 | Mixed     
+MNIST   MLP 1x512 (50% Corruption) | Output Layer Bias         | # Pristine Correlated:    0 (Fraction: 0.000000) | # Corrupt Correlated:    0 (Fraction: 0.000000) | Overlap:   0 | Mixed     
+MNIST   MLP 1x512 (75% Corruption) | Hidden Layer 1 Bias       | # Pristine Correlated:    0 (Fraction: 0.000000) | # Corrupt Correlated:    0 (Fraction: 0.000000) | Overlap:   0 | Mixed     
+MNIST   MLP 1x512 (75% Corruption) | Input Layer Bias          | # Pristine Correlated:    0 (Fraction: 0.000000) | # Corrupt Correlated:    0 (Fraction: 0.000000) | Overlap:   0 | Mixed     
+MNIST   MLP 1x512 (75% Corruption) | Output Layer Bias         | # Pristine Correlated:    0 (Fraction: 0.000000) | # Corrupt Correlated:    0 (Fraction: 0.000000) | Overlap:   0 | Mixed     
+MNIST   MLP 3x512 (25% Corruption) | Hidden Layer 1 Bias       | # Pristine Correlated:    0 (Fraction: 0.000000) | # Corrupt Correlated:    0 (Fraction: 0.000000) | Overlap:   0 | Mixed     
+MNIST   MLP 3x512 (25% Corruption) | Hidden Layer 1 Weights    | # Pristine Correlated:    0 (Fraction: 0.000000) | # Corrupt Correlated:    0 (Fraction: 0.000000) | Overlap:   0 | Mixed     
+MNIST   MLP 3x512 (25% Corruption) | Hidden Layer 2 Bias       | # Pristine Correlated:    0 (Fraction: 0.000000) | # Corrupt Correlated:    0 (Fraction: 0.000000) | Overlap:   0 | Mixed     
+MNIST   MLP 3x512 (25% Corruption) | Hidden Layer 2 Weights    | # Pristine Correlated:    0 (Fraction: 0.000000) | # Corrupt Correlated:    0 (Fraction: 0.000000) | Overlap:   0 | Mixed     
+MNIST   MLP 3x512 (25% Corruption) | Hidden Layer 3 Bias       | # Pristine Correlated:    0 (Fraction: 0.000000) | # Corrupt Correlated:    0 (Fraction: 0.000000) | Overlap:   0 | Mixed     
+MNIST   MLP 3x512 (25% Corruption) | Hidden Layer 3 Weights    | # Pristine Correlated:    0 (Fraction: 0.000000) | # Corrupt Correlated:    0 (Fraction: 0.000000) | Overlap:   0 | Mixed     
+MNIST   MLP 3x512 (25% Corruption) | Input Layer Bias          | # Pristine Correlated:    0 (Fraction: 0.000000) | # Corrupt Correlated:    0 (Fraction: 0.000000) | Overlap:   0 | Mixed     
+MNIST   MLP 3x512 (25% Corruption) | Input Layer Weights       | # Pristine Correlated:    0 (Fraction: 0.000000) | # Corrupt Correlated:    0 (Fraction: 0.000000) | Overlap:   0 | Mixed     
+MNIST   MLP 3x512 (25% Corruption) | Output Layer Bias         | # Pristine Correlated:    0 (Fraction: 0.000000) | # Corrupt Correlated:    0 (Fraction: 0.000000) | Overlap:   0 | Mixed     
+MNIST   MLP 3x512 (50% Corruption) | Hidden Layer 1 Bias       | # Pristine Correlated:    0 (Fraction: 0.000000) | # Corrupt Correlated:    0 (Fraction: 0.000000) | Overlap:   0 | Mixed     
+MNIST   MLP 3x512 (50% Corruption) | Hidden Layer 1 Weights    | # Pristine Correlated:    0 (Fraction: 0.000000) | # Corrupt Correlated:    0 (Fraction: 0.000000) | Overlap:   0 | Mixed     
+MNIST   MLP 3x512 (50% Corruption) | Hidden Layer 2 Bias       | # Pristine Correlated:    0 (Fraction: 0.000000) | # Corrupt Correlated:    0 (Fraction: 0.000000) | Overlap:   0 | Mixed     
+MNIST   MLP 3x512 (50% Corruption) | Hidden Layer 2 Weights    | # Pristine Correlated:    0 (Fraction: 0.000000) | # Corrupt Correlated:    0 (Fraction: 0.000000) | Overlap:   0 | Mixed     
+MNIST   MLP 3x512 (50% Corruption) | Hidden Layer 3 Bias       | # Pristine Correlated:    0 (Fraction: 0.000000) | # Corrupt Correlated:    0 (Fraction: 0.000000) | Overlap:   0 | Mixed     
+MNIST   MLP 3x512 (50% Corruption) | Hidden Layer 3 Weights    | # Pristine Correlated:    0 (Fraction: 0.000000) | # Corrupt Correlated:    0 (Fraction: 0.000000) | Overlap:   0 | Mixed     
+MNIST   MLP 3x512 (50% Corruption) | Input Layer Bias          | # Pristine Correlated:    0 (Fraction: 0.000000) | # Corrupt Correlated:    0 (Fraction: 0.000000) | Overlap:   0 | Mixed     
+MNIST   MLP 3x512 (50% Corruption) | Input Layer Weights       | # Pristine Correlated:    0 (Fraction: 0.000000) | # Corrupt Correlated:    0 (Fraction: 0.000000) | Overlap:   0 | Mixed     
+MNIST   MLP 3x512 (50% Corruption) | Output Layer Bias         | # Pristine Correlated:    0 (Fraction: 0.000000) | # Corrupt Correlated:    0 (Fraction: 0.000000) | Overlap:   0 | Mixed     
+MNIST   MLP 3x512 (75% Corruption) | Hidden Layer 1 Bias       | # Pristine Correlated:    0 (Fraction: 0.000000) | # Corrupt Correlated:    0 (Fraction: 0.000000) | Overlap:   0 | Mixed     
+MNIST   MLP 3x512 (75% Corruption) | Hidden Layer 1 Weights    | # Pristine Correlated:    0 (Fraction: 0.000000) | # Corrupt Correlated:    0 (Fraction: 0.000000) | Overlap:   0 | Mixed     
+MNIST   MLP 3x512 (75% Corruption) | Hidden Layer 2 Bias       | # Pristine Correlated:    0 (Fraction: 0.000000) | # Corrupt Correlated:    0 (Fraction: 0.000000) | Overlap:   0 | Mixed     
+MNIST   MLP 3x512 (75% Corruption) | Hidden Layer 2 Weights    | # Pristine Correlated:    0 (Fraction: 0.000000) | # Corrupt Correlated:    0 (Fraction: 0.000000) | Overlap:   0 | Mixed     
+MNIST   MLP 3x512 (75% Corruption) | Hidden Layer 3 Bias       | # Pristine Correlated:    0 (Fraction: 0.000000) | # Corrupt Correlated:    0 (Fraction: 0.000000) | Overlap:   0 | Mixed     
+MNIST   MLP 3x512 (75% Corruption) | Hidden Layer 3 Weights    | # Pristine Correlated:    0 (Fraction: 0.000000) | # Corrupt Correlated:    0 (Fraction: 0.000000) | Overlap:   0 | Mixed     
+MNIST   MLP 3x512 (75% Corruption) | Input Layer Bias          | # Pristine Correlated:    0 (Fraction: 0.000000) | # Corrupt Correlated:    0 (Fraction: 0.000000) | Overlap:   0 | Mixed     
+MNIST   MLP 3x512 (75% Corruption) | Output Layer Bias         | # Pristine Correlated:    0 (Fraction: 0.000000) | # Corrupt Correlated:    0 (Fraction: 0.000000) | Overlap:   0 | Mixed     
+CIFAR10 MLP 1x512 (50% Corruption) | Hidden Layer 1 Weights    | # Pristine Correlated:    0 (Fraction: 0.000000) | # Corrupt Correlated:    0 (Fraction: 0.000000) | Overlap:   0 | Mixed     
+CIFAR10 MLP 1x512 (50% Corruption) | Output Layer Bias         | # Pristine Correlated:    0 (Fraction: 0.000000) | # Corrupt Correlated:    0 (Fraction: 0.000000) | Overlap:   0 | Mixed     
+CIFAR10 MLP 1x512 (50% Corruption) | Output Layer Weights      | # Pristine Correlated:    0 (Fraction: 0.000000) | # Corrupt Correlated:    0 (Fraction: 0.000000) | Overlap:   0 | Mixed     
+CIFAR10 MLP 1x512 (75% Corruption) | Hidden Layer 1 Weights    | # Pristine Correlated:    0 (Fraction: 0.000000) | # Corrupt Correlated:    0 (Fraction: 0.000000) | Overlap:   0 | Mixed     
+CIFAR10 MLP 1x512 (75% Corruption) | Input Layer Bias          | # Pristine Correlated:    0 (Fraction: 0.000000) | # Corrupt Correlated:    0 (Fraction: 0.000000) | Overlap:   0 | Mixed     
+CIFAR10 MLP 1x512 (75% Corruption) | Output Layer Bias         | # Pristine Correlated:    0 (Fraction: 0.000000) | # Corrupt Correlated:    0 (Fraction: 0.000000) | Overlap:   0 | Mixed     
+CIFAR10 MLP 1x512 (75% Corruption) | Output Layer Weights      | # Pristine Correlated:    0 (Fraction: 0.000000) | # Corrupt Correlated:    0 (Fraction: 0.000000) | Overlap:   0 | Mixed     
+CIFAR10 MLP 3x512 (25% Corruption) | Hidden Layer 1 Weights    | # Pristine Correlated:    0 (Fraction: 0.000000) | # Corrupt Correlated:    0 (Fraction: 0.000000) | Overlap:   0 | Mixed     
+CIFAR10 MLP 3x512 (25% Corruption) | Hidden Layer 2 Weights    | # Pristine Correlated:    0 (Fraction: 0.000000) | # Corrupt Correlated:    0 (Fraction: 0.000000) | Overlap:   0 | Mixed     
+CIFAR10 MLP 3x512 (25% Corruption) | Hidden Layer 3 Weights    | # Pristine Correlated:    0 (Fraction: 0.000000) | # Corrupt Correlated:    0 (Fraction: 0.000000) | Overlap:   0 | Mixed     
+CIFAR10 MLP 3x512 (50% Corruption) | Hidden Layer 1 Weights    | # Pristine Correlated:    0 (Fraction: 0.000000) | # Corrupt Correlated:    0 (Fraction: 0.000000) | Overlap:   0 | Mixed     
+CIFAR10 MLP 3x512 (50% Corruption) | Hidden Layer 2 Weights    | # Pristine Correlated:    0 (Fraction: 0.000000) | # Corrupt Correlated:    0 (Fraction: 0.000000) | Overlap:   0 | Mixed     
+CIFAR10 MLP 3x512 (50% Corruption) | Hidden Layer 3 Weights    | # Pristine Correlated:    0 (Fraction: 0.000000) | # Corrupt Correlated:    0 (Fraction: 0.000000) | Overlap:   0 | Mixed     
+CIFAR10 MLP 3x512 (50% Corruption) | Output Layer Bias         | # Pristine Correlated:    0 (Fraction: 0.000000) | # Corrupt Correlated:    0 (Fraction: 0.000000) | Overlap:   0 | Mixed     
+CIFAR10 MLP 3x512 (75% Corruption) | Hidden Layer 1 Weights    | # Pristine Correlated:    0 (Fraction: 0.000000) | # Corrupt Correlated:    0 (Fraction: 0.000000) | Overlap:   0 | Mixed     
+CIFAR10 MLP 3x512 (75% Corruption) | Hidden Layer 2 Weights    | # Pristine Correlated:    0 (Fraction: 0.000000) | # Corrupt Correlated:    0 (Fraction: 0.000000) | Overlap:   0 | Mixed     
+CIFAR10 MLP 3x512 (75% Corruption) | Hidden Layer 3 Bias       | # Pristine Correlated:    0 (Fraction: 0.000000) | # Corrupt Correlated:    0 (Fraction: 0.000000) | Overlap:   0 | Mixed     
+CIFAR10 MLP 3x512 (75% Corruption) | Hidden Layer 3 Weights    | # Pristine Correlated:    0 (Fraction: 0.000000) | # Corrupt Correlated:    0 (Fraction: 0.000000) | Overlap:   0 | Mixed     
+CIFAR10 MLP 3x512 (75% Corruption) | Input Layer Weights       | # Pristine Correlated:    0 (Fraction: 0.000000) | # Corrupt Correlated:    0 (Fraction: 0.000000) | Overlap:   0 | Mixed     
+CIFAR10 MLP 3x512 (75% Corruption) | Output Layer Bias         | # Pristine Correlated:    0 (Fraction: 0.000000) | # Corrupt Correlated:    0 (Fraction: 0.000000) | Overlap:   0 | Mixed     

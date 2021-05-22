@@ -3,10 +3,10 @@ from torch import nn
 import matplotlib.pyplot as plt
 import numpy as np
 import seaborn as sns
-from matplotlib.animation import FuncAnimation, PillowWriter
 import json
 from itertools import groupby
 from operator import itemgetter
+from functools import cmp_to_key
 from tqdm import tqdm
 
 class MLP(nn.Module):
@@ -59,6 +59,7 @@ def ncc(data0, data1):
     return np.sum(norm_data(data0) * norm_data(data1), axis=-1) / (data0.shape[-1] - 1)
 
 diffs = []
+logs = []
 fig, (ax1, ax2) = plt.subplots(1, 2)
 fig.set_size_inches(12, 6)
 fig.tight_layout(rect=[0, 0.03, 1, 0.95])
@@ -121,6 +122,8 @@ def plot_matrices(seed, dataset, depth, cor, epoch, data, stride=1):
         diffs.append((diff, seed, dataset, depth, cor, epoch, data, stride, layer_str,
                       f'{layer_str} Difference (Epoch {epoch + stride} - {epoch})'))
 
+log_file = open('logs.txt', 'w')
+
 for SEED, dataset in [(123, 'mnist'), (123, 'cifar10')]:
     for d in [1, 3]:
         for cor in [25, 50, 75]:
@@ -163,8 +166,28 @@ for SEED, dataset in [(123, 'mnist'), (123, 'cifar10')]:
                 ax1 = fig.add_subplot(121)
                 ax2 = fig.add_subplot(122)
 
-                ncc_reg[(ncc_reg < 0.6) & (ncc_reg > -0.6)] = 0.0
-                ncc_cor[(ncc_cor < 0.6) & (ncc_cor > -0.6)] = 0.0
+                reg_truth = (ncc_reg < 0.6) & (ncc_reg > -0.6)
+                cor_truth = (ncc_cor < 0.6) & (ncc_cor > -0.6)
+
+                num_reg = (~reg_truth).sum()
+                num_cor = (~cor_truth).sum()
+
+                if num_cor == num_reg:
+                    cat = 'Mixed'
+                elif num_cor >= 2 * num_reg:
+                    cat = 'Corrupt'
+                elif num_cor > num_reg:
+                    cat = 'Corrupt?'
+                elif 2 * num_cor > num_reg:
+                    cat = 'Pristine?'
+                else:
+                    cat = 'Pristine'
+
+                logs.append(('{:7} MLP {}x512 ({}% Corruption) | {:25} | # Pristine Correlated: {:4} (Fraction: {:.6f}) | # Corrupt Correlated: {:4} (Fraction: {:.6f}) | Overlap: {:3} | {:10}\n',
+                             dataset.upper(), d, cor, layer_str, num_reg, (~reg_truth).mean(), num_cor, (~cor_truth).mean(), (~reg_truth & ~cor_truth).sum(), cat))
+
+                ncc_reg[reg_truth] = 0.0
+                ncc_cor[cor_truth] = 0.0
 
                 with sns.axes_style('white'):
                     sns.heatmap(ncc_reg, vmax=1.0, vmin=-1.0, ax=ax1, center=0, cmap='seismic')
@@ -177,3 +200,11 @@ for SEED, dataset in [(123, 'mnist'), (123, 'cifar10')]:
                 plt.savefig(f'{dataset}_heatmaps/seed{SEED}_MLPw512d{d}_cor{cor}_{layer_str.lower().replace(" ", "")}_ncc_filtered.png')
 
             diffs = []
+
+def compare(t1, t2):
+    cmp = t1[-4] - t2[-4]
+    return cmp if cmp != 0 else t1[-6] - t2[-6]
+
+with open('logs.txt', 'w') as log_file:
+    for log, *args in sorted(logs, key=cmp_to_key(compare), reverse=True):
+        log_file.write(log.format(*args))
